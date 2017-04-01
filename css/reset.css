@@ -1,0 +1,105 @@
+/* --------------------------------------------------
+   Resets
+-------------------------------------------------- */
+/* reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+
+a, a:active, a:visited, a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* polyfill */
+header, nav, section, article, main, aside, footer {display: block; }
+
+/* global box-sizing */
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+/* font-sizing */
+html {font-size: 100%; }
+
+/* fontes otimizadas para leitura de artigos */
+article {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+/* clearfix */
+.clear:before, .clear:after {
+  content: " ";
+  display: table;
+}
+.clear:after {clear: both;}
+.clear {*zoom: 1;}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; 
+}
+.clearfix {display: block; height: 1%;}
+.clearfix:before, .clearfix:after {content: " "; display: table;}
+.clearfix:after {clear: both; }
+.clearfix {*zoom: 1; }
+
+/* width by container */
+img {
+  max-width: 100%;
+  width: 100%;
+  vertical-align: bottom;
+  height: auto; 
+}
+
+/* --------------------------------------------------
+   Default wordpress classes
+-------------------------------------------------- */
+/* default wordpress align classes */
+.alignnone {margin: 5px;}
+.aligncenter {margin: 5px auto  5px auto;}
+.alignright {margin: 5px  0px 20px 20px; float: right;}
+.alignleft {margin: 5px 20px  5px  0px; float: left;}
+
+/* default wordpress img captions */
+.wp-caption.alignnone {margin: 5px  0px;}
+.wp-caption.alignleft {margin: 5px 20px  5px  0px;}
+.wp-caption.alignright {margin: 5px  0px  5px 20px;}
+.wp-caption .size-full {width: 100%; height: auto;}
+
+/* gallery */
+.gallery-caption, .wp-caption p.wp-caption-text {
+  font-size: 1.3em;
+  margin: 0;
+  color: #67b4b9;
+  font-weight: bold;
+  font-style: italic; }
+
+/* --------------------------------------------------
+   Textos Gerais
+-------------------------------------------------- */
+
+/* paragraph */
+p {font-size: 1.4em; margin: 20px 0;}
+
+/* bold */
+b, strong {font-weight: bold; }
+
+/* Italic */
+i, em {font-style: italic;}
+
+/* Listagem */
+ul li {list-style: inside disc;}
+
+ol li {list-style: inside decimal;}
