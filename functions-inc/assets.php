@@ -15,6 +15,10 @@ function header_scripts() {
 
 		wp_register_style('style', get_template_directory_uri() . '/css/main.css', array(), '1.0', 'all');
 		wp_enqueue_style('style');
+		
+		//Boostrap CSS
+		wp_register_style('bootstrap-css', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', array(), '1.0', 'all');
+		wp_enqueue_style('bootstrap-css');
 	
 		// remove script nativo, deixa o WP mais rápido
 		wp_deregister_script( 'l10n' );
@@ -33,6 +37,10 @@ function header_scripts() {
 		// Javascript para definicao de plugins
 		wp_register_script('plugins', get_template_directory_uri() . '/js/plugins.js', array(), '1.0');
 		wp_enqueue_script('plugins');
+		
+		//Boostrap JS
+		wp_register_script('bootstrap-js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array(), '1.0');
+		wp_enqueue_script('bootstrap-js');
 
 		// Google Fonts
 		//wp_register_style('googleFonts', 'https://fonts.googleapis.com/css?family=Viga|Dosis:600,700', array(), '1.0', 'all');
